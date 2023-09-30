@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:title="Tic-Tac-Toe"
+        android:titleTextColor="@color/white"
+        android:paddingStart="150dp"
+        android:background="#3C0F11BF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:backgroundTint="#901C1C"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_file"
+            android:onClick="Check" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
